@@ -9,8 +9,12 @@ class FlockingConfig(Config):
 
 
 class Bird(Agent):
-    ...
-
+    def update(self):
+        if self.in_proximity_accuracy().count() == 0:
+            #wandering
+            pass
+        else:
+            pass
 
 (
     # Step 1: Create a new simulation.
